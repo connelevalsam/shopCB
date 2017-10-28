@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Single Item || Shop440</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/tachyons.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+		width: 100%;
+	}
+	.borderColor1 {
+		color: #000;
+		font-size: 13px;
+	}
+	.borderColor1:hover {
+		color: green;
+		border-bottom: 4px solid;
+	}
+	.cBorderColor1 {
+		color: green;
+		font-size: 13px;
+		border-bottom: 4px solid;
+	}
+	.close-box, .open-info {
+	    display: none;
+	}
+	.closeInfo {
+		 transform: rotateX(180deg); 
+	}
+	.responsive-menu-open {
+		font-size: 15px;
+		color: #353537;
+		padding: 0 24px;
+		line-height: 34px;
+		height: 44px;
+		float: right;
+		display: none;
+	}
+	.responsive-menu {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		min-width: 100%;
+		background: #fff;
+		z-index: 999;
+		overflow-y: scroll;
+		-webkit-transition: .25s;
+		-moz-transition: .25s;
+		-o-transition: .25s;
+		-ms-transition: .25s;
+		transition: .25s;
+	}
+	.responsive-menu.open {
+		left: 0;
+	}
+	.responsive-menu-close {
+		position: absolute;
+		top: 8px;
+		right: 1px;
+		font-size: 15px;
+		color: #353537;
+		line-height: 34px;
+		height: 44px;
+	}
+	@media screen and (min-device-width: 1200px) {
+		
+	    .borderColor {
+			color: var(--black-20);
+		}
+		.borderColor:hover {
+			border-bottom: 4px solid blue;
+		}
+		.search {
+			top: 23px;
+			left: 50px;
+		}
+	}
+	@media all and (max-width: 1200px) {
+	.main-nav {
+		display: none;
+	}
+	.responsive-menu-open {
+		display: inline-block;
+	}
+}
+@media all and (max-width: 768px) {
+	.header .top span, .header .top .links {
+		float: none;
+	}
+	.header .top a {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.borderColor {
+		color: var(--black-20);
+	}
+	.borderColor:hover {
+		border-bottom: none;
+	}
+	.search {
+		top: 16px;
+		left: 20px;
+	}
+}
+	</style>
+</head>
+<body>
+    <main class="w-100">
+        <!-- header -->
+    	<header class="w-100 cf">
+    	    <!-- logo -->
+    		<div class="w-20 dib v-top mv2">
+    			<a href="index.html" class="link pointer">
+    				<img src="img/logo.png" class="cover h2 mh2">
+    			</a>
+    		</div><div class="w-40 w-50-ns dib v-top mv2">
+    			<input class="bg-transparent w-100 ba b--black-10 pv2 pv3-l br2 tc" placeholder="Anything . Anywhere">
+    		</div><div class="main-nav w-30 w-40-ns dib v-top">
+				<div class="w-100 pt2 tr-l">
+					<a href="login.html" class="f6 borderColor pa2 link pointer ttc mv2 mv0-l mr2-l db dib-l no-underline">help</a>
+					<a href="login.html" class="f6 borderColor pa2 link pointer ttc mv2 mv0-l mr2-l db dib-l no-underline">sign up</a>
+					<a href="signup.html" class="f6 borderColor pa2 link pointer ttc mv2 mv0-l mr2-l db dib-l no-underline">log in</a>
+				</div>
+			</div>
+			<a href="#" class="responsive-menu-open mv2 w-40 w-30-ns tc-ns no-underline">
+				<img src="img/hamburger.svg" class="dib mw2" style="outline: none;">
+				<span class="v-top f6 f5-m f4-l">menu</span>
+			</a>
+    	</header>
+    	<div class="responsive-menu">
+    	    <div class="w-20 dib v-top mv2">
+    			<img src="img/logo.png" class="cover h2">
+    		</div>
+    		<div class="dib">
+    			<input class="bg-transparent w-100 ba b--black-10 pv2 pv3-l tc" placeholder="Anything . Anywhere">
+    		</div>
+			<a href="#" class="responsive-menu-close no-underline">
+				<img src="img/hamburger.svg" class="dib mw2 mw3-m" style="outline: none;">
+				<span class="v-top">menu</span>
+			</a>
+			<nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
+		</div> <!-- end .responsive-menu -->
+		<!-- =============================================== header =========================================================== -->
+		<!-- =============================================== container ======================================================== -->
+		<section class="w-100 ph5-l">
+    		<!-- container -->
+    		<div class="w-100 ph2 ph3-m ph5-l">
+    		<!-- =================================== color chooser section ========================================== -->
+    			<div class="mh2 nowrap overflow-hidden">
+    				<div class="h3 w3 br2 bg-blue dib mr1"></div>
+    				<div class="h3 w3 br2 bg-green dib mh1"></div>
+    				<div class="h3 w3 br2 bg-silver dib mh1"></div>
+    				<div class="h3 w3 br2 bg-yellow dib mh1"></div>
+    				<div class="h3 w3 br2 bg-red dib mh1"></div>
+    				<div class="h3 w3 br2 bg-pink dib mh1"></div>
+    			</div>
+    			<!-- ========================== current selected color ============================= -->
+    			<div class="mt2">
+    				<div class="w-100 pb2 bg-light-pink tc">
+    				    <div class="h5 br2 bg-hot-pink vh-50-ns"></div>
+    				    <small>Expand image</small>
+					</div>
+    			</div>
+    			<!-- ========================== product name ======================================== -->
+    			<div class="mt3 tc-ns">
+    				<span class="black-70 ttc">nice forever elegant crochet lace knee-length dress - red</span>
+    				<div class="tc">
+    					<h3 class="mv2">$12,000</h3>
+    				</div>
+    			</div>
+    			<!-- ========================== purchases ===================================== -->
+    			<div class="mt2 bt bb b--black-10 pv2">
+    				<div class="dib w-50 br b--black-10 tc">
+    					<h3 class="f6 fw1 f4-ns fw4-ns black-70 mv1">Purchases</h3>
+    					<h3 class="f6 fw1 f4-ns fw4-ns black-70 mv1">0</h3>
+    				</div><div class="dib w-50 tc">
+    					<h3 class="f6 fw1 f4-ns fw4-ns black-70 mv1">Wishlist</h3>
+    					<h3 class="f6 fw1 f4-ns fw4-ns black-70 mv1">0</h3>
+    				</div>
+    			</div>
+    			<!-- ============================== description =============================== -->
+    			<div class="w-100">
+    				<!-- predefined svg -->
+    			    <svg style="display:none">
+					  <defs>
+					    <path id="arrow" d="M8.485 7.142l7.07-7.07 1.416 1.413L8.487 9.97l-.707-.707L0 1.485 1.414.07l7.07 7.072z" fill="#213543" fill-rule="evenodd" fill-opacity=".7"/>
+					  </defs>
+					</svg>
+					<div class="w-100 dib ph4-ns v-top">
+	    				<!-- ===================== product ========================== -->
+    				    <div class="ba b--black-10 tl mv3 ph2 pv3 pointer w-50-ns dib-ns cf v-top">
+	    				    <span class="">Product Description</span>
+    						<svg width="17" height="10" viewBox="0 0 17 10" class="fr open-box">
+		                        <use href="#arrow"/>
+		                    </svg>
+		                    <svg width="17" height="10" viewBox="0 0 17 10" class="fr close-box closeInfo">
+		                        <use href="#arrow"/>
+		                    </svg>
+	    					<div class="pa2 open-info">
+	    						<ul class="measure green">
+	    							<li>Product is red</li>
+	    							<li>Product is good</li>
+	    							<li>Product is original</li>
+	    						</ul>
+	    					</div>
+	    				</div><!-- ============================ seller ========================== --><div class="ba b--black-10 tl mv3 ph2 pv3 pointer w-50-ns dib-ns cf v-top">
+    					    <span>Seller Delivery Policy</span>
+    						<svg width="17" height="10" viewBox="0 0 17 10" class="fr open-box">
+		                        <use href="#arrow"/>
+		                    </svg>
+		                    <svg width="17" height="10" viewBox="0 0 17 10" class="fr close-box closeInfo">
+		                        <use href="#arrow"/>
+		                    </svg>
+		                    <div class="pa2 open-info">
+		                    	<ul class="green">
+	    							<li>Delivery for Items over N20,000</li>
+	    							<li>Only Same State Delivery</li>
+	    							<li>Refunds if item isn't delivered in 20days</li>
+	    						</ul>
+		                    </div>
+    					</div>
+    				</div>
+    			</div>
+    			<!-- ====================================================================== -->
+    			<div class="mt2 bt bb b--black-10 pv2">
+    			    <div class="dib w-50 v-mid">
+    					<div class="dib">
+    						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="20" viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;" xml:space="preserve">
+			                    <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"/>
+								<path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z"/>
+								<path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z"/>
+							</svg>
+    					</div>
+    					<div class="dib">
+    						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="20" viewBox="0 0 491.86 491.86" style="enable-background:new 0 0 491.86 491.86;" xml:space="preserve">
+								<path d="M465.167,211.614H280.245V26.691c0-8.424-11.439-26.69-34.316-26.69s-34.316,18.267-34.316,26.69v184.924H26.69C18.267,211.614,0,223.053,0,245.929s18.267,34.316,26.69,34.316h184.924v184.924c0,8.422,11.438,26.69,34.316,26.69s34.316-18.268,34.316-26.69V280.245H465.17c8.422,0,26.69-11.438,26.69-34.316S473.59,211.614,465.167,211.614z"/>
+							</svg>
+    					</div>
+    					<span class="black-70 f6 v-top">Add to wishlist</span>
+    				</div><div class="dib w-50 v-mid pl4-ns cf">
+    					<div class="dib pt2 fr">
+    						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 491.86 491.86" style="enable-background:new 0 0 491.86 491.86; padding: 0px;" xml:space="preserve">
+								<path d="M1.174,129.288c-1.571,3.669-1.565,7.706,0.02,11.366l30.856,71.303h232.902l30.856-71.303
+									c1.584-3.661,1.591-7.698,0.02-11.366c-1.579-3.689-4.529-6.486-8.303-7.877c-44.82-16.51-91.93-24.769-139.023-24.769
+									c-47.104,0-94.193,8.255-139.023,24.769C5.703,122.802,2.753,125.598,1.174,129.288z"/>
+								<path d="M100.293,85.316v-2.341c0-26.581,21.626-48.207,48.207-48.207s48.207,21.626,48.207,48.207v2.341
+									c6.752,0.786,13.488,1.742,20.203,2.859v-5.2c0-37.722-30.689-68.411-68.411-68.411S80.089,45.253,80.089,82.975v5.2
+									C86.805,87.058,93.541,86.102,100.293,85.316z"/>
+								<path d="M38.169,226.1l20.625,47.661c2.281,5.27,7.465,8.675,13.206,8.675h152.999c5.742,0,10.926-3.405,13.207-8.675
+									l20.625-47.661H38.169z"/>
+							</svg>
+							<span class="black-70 v-top f6">Place an order</span>
+    					</div>
+    					
+    				</div>
+    			</div>
+    			<!-- ========================= about seller ========================== -->
+    			<div class="w-100 pv3">
+    				<!-- ========================== top =============================== -->
+    				<div class="w-100">
+    					<div class="h3 w-30 bg-gold br3 dib"></div><div class="dib h3 w-40 pl2">
+    						<h5 class="f6 fw6 mv2">La Shakara clothing store</h5>
+    						<small class="black-70">
+    							ID verified <br>
+    							Address verified <br>
+    							Member since 28 Jan, 2017
+    						</small>
+    					</div><div class="dib h3 w-30 v-mid">
+    						<a href="#" class="pa2 f6 white bg-green br2 link pointer">Message</a>
+    					</div>
+    				</div>
+    				<!-- ==================== address and phone ==================== -->
+    				<div class="ph2 w-100">
+    					<h3 class="mv2 f6">Address:<span class="black-70 f6 fw1"> Diamond Hill, Calabar</span></h3>
+    					<h3 class="mv2 f6">Phone:<span class="black-70 f6 fw1"> 08041991162</span></h3>
+    				</div>
+    				<!-- ========================== shop pic ============================= -->
+    			<div class="mt2">
+    				<div class="w-100 pb2 tc">
+    				    <div class="h5 br2 bg-light-blue vh-50-ns"></div>
+					</div>
+    			</div>
+    			</div>
+    		</div>
+    	</section>
+	</main>
+	<!-- Scripts.js -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>
